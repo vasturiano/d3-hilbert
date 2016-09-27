@@ -1,4 +1,4 @@
-d3.hilbert = function() {
+export default function() {
 
     // Hilbert curve algo, from https://en.wikipedia.org/wiki/Hilbert_curve#Applications_and_mapping_algorithms
     var hilbert = (function() {

@@ -1,0 +1,31 @@
+{
+  "name": "d3-hilbert",
+  "version": "0.1.0",
+  "description": "D3 layout to visualize distance variables using a continuous Hilbert space-filling space.",
+  "keywords": [
+    "d3",
+    "hilbert"
+  ],
+  "author": {
+    "name": "Vasco Asturiano",
+    "url": "http://bost.ocks.org/vasturiano"
+  },
+  "license": "GPL-3.0",
+  "main": "build/d3-hilbert.js",
+  "jsnext:main": "index",
+  "homepage": "https://github.com/vasturiano/d3-hilbert",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vasturiano/d3-hilbert.git"
+  },
+  "scripts": {
+    "build": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -n d3 -o build/d3-hilbert.js -- index.js",
+    "prepublish": "npm run build && uglifyjs --preamble \"$(preamble)\" build/d3-hilbert.js -c -m -o build/d3-hilbert.min.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "package-preamble": "0.0",
+    "rollup": "0.34",
+    "uglify-js": "2"
+  }
+}
