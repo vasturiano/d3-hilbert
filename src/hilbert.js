@@ -76,14 +76,12 @@ export default function() {
         return hilbertLayout;
     };
 
-    hilbertLayout.layout = function(ranges) {
-        ranges.forEach(function(range) {
-            var d = getHilbertPath(range.start, range.length, order, canvasWidth, simplifyCurves);
+    hilbertLayout.layout = function(range) {
+        var d = getHilbertPath(range.start, range.length, order, canvasWidth, simplifyCurves);
 
-            range.cellWidth = d.cellWidth;
-            range.startCell = d.startCell;
-            range.pathVertices = d.pathVertices
-        });
+        range.cellWidth = d.cellWidth;
+        range.startCell = d.startCell;
+        range.pathVertices = d.pathVertices;
 
         return hilbertLayout;
     };
