@@ -87,10 +87,11 @@ export default function() {
     };
 
     hilbertLayout.getValAtXY = function(x, y) {
-        var n = Math.pow(2, order);
-        x *= (n / canvasWidth);
-        y *= (n / canvasWidth);
-        return hilbert.point2Distance(x, y, n);
+        var n = Math.pow(2, order),
+            xy = [x, y].map(function(coord) {
+                return Math.floor(coord * n / canvasWidth);
+            });
+        return hilbert.point2Distance(xy[0], xy[1], n);
     };
 
     return hilbertLayout;
