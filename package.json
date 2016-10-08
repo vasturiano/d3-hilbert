@@ -19,8 +19,9 @@
     "url": "https://github.com/vasturiano/d3-hilbert.git"
   },
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && rollup --banner \"$(preamble)\" -f umd -n d3 -o dist/d3-hilbert.js -- index.js",
-    "prepublish": "npm run build && uglifyjs --preamble \"$(preamble)\" dist/d3-hilbert.js -c -m -o dist/d3-hilbert.min.js"
+    "build": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -n d3 -o build/d3-hilbert.js -- index.js",
+    "minify": "uglifyjs build/d3-hilbert.js -o build/d3-hilbert.min.js -c -m --preamble \"$(preamble)\"",
+    "prepublish": "npm run build && npm run minify"
   },
   "dependencies": {},
   "devDependencies": {
