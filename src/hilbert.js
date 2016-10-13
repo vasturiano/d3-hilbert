@@ -16,6 +16,7 @@ export default function() {
             }
         }
 
+        // Note: this function will start breaking down for n > 2^26 (MAX_SAFE_INTEGER = 2^53)
         // x,y: cell coordinates, n: sqrt of num cells (square side size)
         function point2Distance(x, y, n) {
             var rx, ry, d = 0,
@@ -64,6 +65,8 @@ export default function() {
         return hilbertLayout;
     };
 
+    // Note: Maximum safe order is 26, due to JS numbers upper-boundary of 53 bits
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
     hilbertLayout.order = function(_) {
         if (!arguments.length) return order;
         order = +_;
