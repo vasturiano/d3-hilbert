@@ -22,7 +22,7 @@ export default function() {
             var rx, ry, d = 0,
                 xy = [x, y];
 
-            for (var s = n / 2; s > 0; s /= 2) {
+            for (var s = n / 2; s >= 1; s /= 2) {
                 rx = (xy[0] & s) > 0;
                 ry = (xy[1] & s) > 0;
                 d += s * s * ((3 * rx) ^ ry);
