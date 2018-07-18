@@ -1,6 +1,6 @@
 {
   "name": "d3-hilbert",
-  "version": "0.2.11",
+  "version": "1.0.0",
   "description": "D3 layout to visualize distance variables using a continuous Hilbert space-filling space.",
   "keywords": [
     "d3",
