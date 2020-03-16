@@ -97,6 +97,15 @@ export default function() {
         return hilbert.point2Distance(xy[0], xy[1], n);
     };
 
+    hilbertLayout.getXyAtVal = function (val) {
+        if (val > Math.pow(4, order) || val < 0) {
+            console.error('Value is outside hilbert space boundaries.');
+            return null;
+        } else {
+            return hilbert.distance2Point(val, Math.pow(2, order));
+        }
+    };
+
     return hilbertLayout;
 
     //
