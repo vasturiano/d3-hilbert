@@ -5,9 +5,11 @@ d3-hilbert
 [![Build Size][build-size-img]][build-size-url]
 [![Dependencies][dependencies-img]][dependencies-url]
 
-D3 layout to visualize distance variables using a continuous Hilbert space-filling curve. Here's an [example](http://bl.ocks.org/vasturiano/aee11f57aaa6b1ec96f1df386166a396).
+D3 layout to visualize distance variables using a continuous Hilbert space-filling curve. Here's an [example](https://observablehq.com/@vasturiano/hilbert-curve).
 
 See also [d3-morton](https://github.com/vasturiano/d3-morton-order).
+
+If you are looking for a module that also performs rendering, please see [hilbert-chart](https://github.com/vasturiano/hilbert-chart).
 
 ## Quick start
 
