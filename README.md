@@ -3,7 +3,7 @@ d3-hilbert
 
 [![NPM package][npm-img]][npm-url]
 [![Build Size][build-size-img]][build-size-url]
-[![Dependencies][dependencies-img]][dependencies-url]
+[![NPM Downloads][npm-downloads-img]][npm-downloads-url]
 
 D3 layout to visualize distance variables using a continuous Hilbert space-filling curve. Here's an [example](https://observablehq.com/@vasturiano/hilbert-curve).
 
@@ -13,19 +13,19 @@ If you are looking for a module that also performs rendering, please see [hilber
 
 ## Quick start
 
-```
+```js
 import d3Hilbert from 'd3-hilbert';
 ```
 or
-```
+```js
 d3.hilbert = require('d3-hilbert');
 ```
 or even
-```
+```html
 <script src="//unpkg.com/d3-hilbert"></script>
 ```
 then
-```
+```js
 const myRange = { start: 4, length: 9 };
 d3.hilbert()
     .order(2)
@@ -44,9 +44,9 @@ d3.hilbert()
 | **getXyAtVal**(*num*) | Returns the `[x, y]` coordinates of the requested value. Throws an error if the value is outside the boundaries of the current hilbert domain. | |
 
 
-[npm-img]: https://img.shields.io/npm/v/d3-hilbert.svg
+[npm-img]: https://img.shields.io/npm/v/d3-hilbert
 [npm-url]: https://npmjs.org/package/d3-hilbert
-[build-size-img]: https://img.shields.io/bundlephobia/minzip/d3-hilbert.svg
+[build-size-img]: https://img.shields.io/bundlephobia/minzip/d3-hilbert
 [build-size-url]: https://bundlephobia.com/result?p=d3-hilbert
-[dependencies-img]: https://img.shields.io/david/vasturiano/d3-hilbert.svg
-[dependencies-url]: https://david-dm.org/vasturiano/d3-hilbert
+[npm-downloads-img]: https://img.shields.io/npm/dt/d3-hilbert
+[npm-downloads-url]: https://www.npmtrends.com/d3-hilbert
