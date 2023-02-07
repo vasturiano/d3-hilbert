@@ -16,11 +16,7 @@ If you are looking for a module that also performs rendering, please see [hilber
 ```js
 import d3Hilbert from 'd3-hilbert';
 ```
-or
-```js
-d3.hilbert = require('d3-hilbert');
-```
-or even
+or using a *script* tag
 ```html
 <script src="//unpkg.com/d3-hilbert"></script>
 ```
