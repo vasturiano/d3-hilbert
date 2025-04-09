@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "type": "module",
+  "jsdelivr": "dist/d3-hilbert.min.js",
   "unpkg": "dist/d3-hilbert.min.js",
   "main": "dist/d3-hilbert.mjs",
   "module": "dist/d3-hilbert.mjs",

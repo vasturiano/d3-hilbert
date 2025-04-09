@@ -18,7 +18,7 @@ import d3Hilbert from 'd3-hilbert';
 ```
 or using a *script* tag
 ```html
-<script src="//unpkg.com/d3-hilbert"></script>
+<script src="//cdn.jsdelivr.net/npm/d3-hilbert"></script>
 ```
 then
 ```js
